@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Salihan first-angular-app';
+
+  message: any = "my message";
 }
