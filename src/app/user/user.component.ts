@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
 import { User } from './user';
 
 @Component({
@@ -15,9 +16,12 @@ export class UserComponent implements OnInit {
     "mobile": "017-6953664"
   }
 
-  constructor() { }
+  products2: any
+
+  constructor(private servProducts: ProductService) { }
 
   ngOnInit(): void {
+    this.products2 = this.servProducts.getProducts();
   }
 
 }
