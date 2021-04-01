@@ -8,18 +8,22 @@ import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from './product.service';
+import { ResUserComponent } from './res-user/res-user.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
     UserComponent,
-    ProductComponent
+    ProductComponent,
+    ResUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
